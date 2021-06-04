@@ -1,0 +1,15 @@
+﻿@page "/"
+
+<h1>Der digitale Kniffelblock</h1>
+
+<form>
+	<div class="form-group">
+		<label for="numberInput">Mit wie vielen Spalten wollt ihr spielen?</label>
+		<input type="number" class="form-control" id="numberInput" @bind="numberOfColumns"/>
+	</div>
+	<a class="btn btn-primary" href="sheet/@numberOfColumns" type="submit">Und los!</a>
+</form>
+
+@code {
+	public int numberOfColumns { get; set; } = 6;
+}

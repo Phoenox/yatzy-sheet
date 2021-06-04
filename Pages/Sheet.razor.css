@@ -1,0 +1,32 @@
+﻿body {
+}
+
+table {
+	table-layout: fixed;
+}
+
+table tbody th {
+	position: sticky;
+	left: 0;
+	background: white;
+	z-index: 1;
+}
+
+th {
+	text-align: center;
+}
+
+td {
+	width: 1px;
+	white-space: nowrap;
+	text-align: center;
+}
+
+input {
+	width: 60px;
+	text-align: center;
+}
+
+input:read-only {
+	background-color: lightgray;
+}

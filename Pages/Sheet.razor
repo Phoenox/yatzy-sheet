@@ -1,0 +1,188 @@
+﻿@page "/sheet/{numberOfColumns:int}"
+
+<table>
+	<thead>
+		<tr>
+			<th colspan="2" />
+			@for (int i = 1; i <= numberOfColumns; i++)
+			{
+				<th>Spiel @i</th>
+			}
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>&#9856;&#9856;&#9856;</th>
+			<td>Nur Einser zählen</td>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" @bind="Game.Columns[localIndex].Ones" onclick="this.select()" /></td>
+			}
+		</tr>
+		<tr>
+			<th>&#9857;&#9857;&#9857;</th>
+			<td>Nur Zweier zählen</td>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" @bind="Game.Columns[localIndex].Twos" onclick="this.select()" /></td>
+			}
+		</tr>
+		<tr>
+			<th>&#9858;&#9858;&#9858;</th>
+			<td>Nur Dreier zählen</td>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" @bind="Game.Columns[localIndex].Threes" onclick="this.select()" /></td>
+			}
+		</tr>
+		<tr>
+			<th>&#9859;&#9859;&#9859;</th>
+			<td>Nur Vierer zählen</td>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" @bind="Game.Columns[localIndex].Fours" onclick="this.select()" /></td>
+			}
+		</tr>
+		<tr>
+			<th>&#9860;&#9860;&#9860;</th>
+			<td>Nur Fünfer zählen</td>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" @bind="Game.Columns[localIndex].Fives" onclick="this.select()" /></td>
+			}
+		</tr>
+		<tr>
+			<th>&#9861;&#9861;&#9861;</th>
+			<td>Nur Sechser zählen</td>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" @bind="Game.Columns[localIndex].Sixes" onclick="this.select()" /></td>
+			}
+		</tr>
+		<tr>
+			<th colspan="2">Summe</th>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" readonly @bind="Game.Columns[localIndex].TopSum" /></td>
+			}
+		</tr>
+		<tr>
+			<th>Bonus bei 63+</th>
+			<td>Plus 35</td>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" readonly @bind="Game.Columns[localIndex].Bonus" /></td>
+			}
+		</tr>
+		<tr>
+			<th colspan="2">Gesamt oberer Teil</th>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" readonly @bind="Game.Columns[localIndex].TopSumWithBonus" /></td>
+			}
+		</tr>
+		<tr>
+			<th>Dreierpasch</th>
+			<td>Alle Augen zählen</td>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" @bind="Game.Columns[localIndex].Triple" onclick="this.select()" /></td>
+			}
+		</tr>
+		<tr>
+			<th>Viererpasch</th>
+			<td>Alle Augen zählen</td>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" @bind="Game.Columns[localIndex].Quadruple" onclick="this.select()" /></td>
+			}
+		</tr>
+		<tr>
+			<th>Full House</th>
+			<td>25 Punkte</td>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" @bind="Game.Columns[localIndex].FullHouse" onclick="this.select()" /></td>
+			}
+		</tr>
+		<tr>
+			<th>Kleine Straße</th>
+			<td>30 Punkte</td>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" @bind="Game.Columns[localIndex].SmallStreet" onclick="this.select()" /></td>
+			}
+		</tr>
+		<tr>
+			<th>Große Straße</th>
+			<td>40 Punkte</td>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" @bind="Game.Columns[localIndex].BigStreet" onclick="this.select()" /></td>
+			}
+		</tr>
+		<tr>
+			<th>Kniffel</th>
+			<td>50 Punkte</td>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" @bind="Game.Columns[localIndex].Yatzy" onclick="this.select()" /></td>
+			}
+		</tr>
+		<tr>
+			<th>Chance</th>
+			<td>Alle Augen zählen</td>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" @bind="Game.Columns[localIndex].Chance" onclick="this.select()" /></td>
+			}
+		</tr>
+		<tr>
+			<th colspan="2">Gesamt unterer Teil</th>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" readonly @bind="Game.Columns[localIndex].LowSum" /></td>
+			}
+		</tr>
+		<tr>
+			<th colspan="2">Spielsumme</th>
+			@for (int i = 0; i < numberOfColumns; i++)
+			{
+				var localIndex = i;
+				<td><input type="number" readonly @bind="Game.Columns[localIndex].ColumnSum" /></td>
+			}
+		</tr>
+		<tr>
+			<th colspan="2">Total</th>
+			<td colspan="@numberOfColumns"><input type="number" readonly style="width: 100%;" @bind="Game.Total" /></td>
+		</tr>
+	</tbody>
+</table>
+
+@code {
+	[ParameterAttribute] public int numberOfColumns { get; set; }
+
+	Game Game { get; set; }
+
+	protected override void OnParametersSet()
+	{
+		Game = new Game(numberOfColumns);
+	}
+}
