@@ -10,9 +10,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Setup .NET Core SDK
-      uses: actions/setup-dotnet@v1.6.0
+      uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.1
+        dotnet-version: 3.1.x
     - name: Publish .NET Core Project
       run: dotnet publish Yatzysheet.csproj -c Release -o release --nologo
     - name: Commit wwwroot to GitHub Pages
