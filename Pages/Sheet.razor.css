@@ -30,3 +30,11 @@ input {
 input:read-only {
 	background-color: lightgray;
 }
+
+input.filled {
+	background-color: lightcyan;
+}
+
+input.crossed {
+	background-color: lightpink;
+}

@@ -17,7 +17,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].Ones" onclick="this.select()" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].Ones" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].Ones)" /></td>
 			}
 		</tr>
 		<tr>
@@ -26,7 +26,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].Twos" onclick="this.select()" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].Twos" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].Twos)" /></td>
 			}
 		</tr>
 		<tr>
@@ -35,7 +35,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].Threes" onclick="this.select()" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].Threes" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].Threes)" /></td>
 			}
 		</tr>
 		<tr>
@@ -44,7 +44,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].Fours" onclick="this.select()" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].Fours" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].Fours)" /></td>
 			}
 		</tr>
 		<tr>
@@ -53,7 +53,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].Fives" onclick="this.select()" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].Fives" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].Fives)" /></td>
 			}
 		</tr>
 		<tr>
@@ -62,7 +62,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].Sixes" onclick="this.select()" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].Sixes" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].Sixes)" /></td>
 			}
 		</tr>
 		<tr>
@@ -96,7 +96,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].Triple" onclick="this.select()" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].Triple" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].Triple)" /></td>
 			}
 		</tr>
 		<tr>
@@ -105,7 +105,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].Quadruple" onclick="this.select()" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].Quadruple" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].Quadruple)" /></td>
 			}
 		</tr>
 		<tr>
@@ -114,7 +114,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].FullHouse" onclick="this.select()" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].FullHouse" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].FullHouse)" /></td>
 			}
 		</tr>
 		<tr>
@@ -123,7 +123,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].SmallStreet" onclick="this.select()" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].SmallStreet" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].SmallStreet)" /></td>
 			}
 		</tr>
 		<tr>
@@ -132,7 +132,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].BigStreet" onclick="this.select()" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].BigStreet" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].BigStreet)" /></td>
 			}
 		</tr>
 		<tr>
@@ -141,7 +141,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].Yatzy" onclick="this.select()" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].Yatzy" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].Yatzy)" /></td>
 			}
 		</tr>
 		<tr>
@@ -150,7 +150,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].Chance" onclick="this.select()" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].Chance" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].Chance)" /></td>
 			}
 		</tr>
 		<tr>
@@ -184,5 +184,14 @@
 	protected override void OnParametersSet()
 	{
 		Game = new Game(numberOfColumns);
+	}
+
+	string GetCssClass(int? value)
+	{
+		if (value == 0)
+			return "crossed";
+		if (value is not null)
+			return "filled";
+		return "";
 	}
 }
