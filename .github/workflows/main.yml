@@ -17,6 +17,8 @@ jobs:
       run: dotnet publish Yatzysheet.csproj -c Release -o release --nologo
     - name: Change base-tag in index.html from / to yatzy-sheet
       run: sed -i 's/<base href="\/" \/>/<base href="\/yatzy-sheet\/" \/>/g' release/wwwroot/index.html
+    - name: Add .nojekyll file
+      run: touch release/wwwroot/.nojekyll
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
