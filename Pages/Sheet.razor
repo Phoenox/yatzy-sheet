@@ -66,7 +66,8 @@
 			}
 		</tr>
 		<tr>
-			<th colspan="2">Summe</th>
+			<th>Summe</th>
+			<td></td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -83,7 +84,8 @@
 			}
 		</tr>
 		<tr>
-			<th colspan="2">Gesamt oberer Teil</th>
+			<th>Gesamt Oben</th>
+			<td></td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -154,7 +156,8 @@
 			}
 		</tr>
 		<tr>
-			<th colspan="2">Gesamt unterer Teil</th>
+			<th>Gesamt Unten</th>
+			<td></td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -162,7 +165,8 @@
 			}
 		</tr>
 		<tr>
-			<th colspan="2">Spielsumme</th>
+			<th>Spielsumme</th>
+			<td></td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -170,7 +174,8 @@
 			}
 		</tr>
 		<tr>
-			<th colspan="2">Total</th>
+			<th>Total</th>
+			<td></td>
 			<td colspan="@numberOfColumns"><input type="number" readonly style="width: 100%;" @bind="Game.Total" /></td>
 		</tr>
 	</tbody>
