@@ -53,7 +53,7 @@
       "url": "favicon.ico"
     },
     {
-      "hash": "sha256-k7X8yBYPK5KWGEaLnDRg0LYWZPTFpndum3\/ys66IXl0=",
+      "hash": "sha256-E0FX0M7AycpglSgMWFXo+pwCbDOxmCPrwC/yrNEWDz0=",
       "url": "index.html"
     },
     {
