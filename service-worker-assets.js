@@ -89,7 +89,7 @@
       "url": "_framework\/dotnet.5.0.6.js"
     },
     {
-      "hash": "sha256-hdHWSxjmqZMN\/7iXnR3jdIPIN6gOQpR0sGiPv2KlDtM=",
+      "hash": "sha256-YoSby748Mkryq9WP4xh0aVu88UuHGzyg6wTAyTqmHOM=",
       "url": "Yatzysheet.styles.css"
     },
     {
@@ -249,5 +249,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "E7ect1iI"
+  "version": "lUMQHJCj"
 };
