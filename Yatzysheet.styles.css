@@ -1,0 +1,41 @@
+/* /Pages/Sheet.razor.rz.scp.css */
+body[b-0243begupy] {
+}
+
+table[b-0243begupy] {
+	table-layout: fixed;
+}
+
+table tbody th[b-0243begupy] {
+	position: sticky;
+	left: 0;
+	background: white;
+	z-index: 1;
+}
+
+th[b-0243begupy] {
+	text-align: center;
+}
+
+td[b-0243begupy] {
+	width: 1px;
+	white-space: nowrap;
+	text-align: center;
+}
+
+input[b-0243begupy] {
+	width: 60px;
+	text-align: center;
+}
+
+input:read-only[b-0243begupy] {
+	background-color: lightgray;
+}
+
+input.filled[b-0243begupy] {
+	background-color: lightcyan;
+}
+
+input.crossed[b-0243begupy] {
+	background-color: lightpink;
+}
