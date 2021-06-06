@@ -1,4 +1,5 @@
 # yatzy-sheet
-A blazor-based app to replace your Yatzy paper.
+[![Deploy to GitHub Pages](https://github.com/Phoenox/yatzy-sheet/actions/workflows/main.yml/badge.svg)](https://github.com/Phoenox/yatzy-sheet/actions/workflows/main.yml)
 
-Have a look on it here: [phoenox.github.io/yatzy-sheet](https://phoenox.github.io/yatzy-sheet)
+A blazor-based app to replace your Yatzy paper.  
+Have a look at it here: [phoenox.github.io/yatzy-sheet](https://phoenox.github.io/yatzy-sheet)
