@@ -7,7 +7,7 @@
 			<th colspan="2" />
 			@for (int i = 1; i <= numberOfColumns; i++)
 			{
-				<th>@localizer[$"Game {i}"]</th>
+				<th>@localizer["Game {0}", i]</th>
 			}
 		</tr>
 	</thead>
@@ -113,7 +113,7 @@
 		</tr>
 		<tr>
 			<th>@localizer["Full House"]</th>
-			<td>@localizer["Score 25"]</td>
+			<td>@localizer["Score {0}", 25]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -122,7 +122,7 @@
 		</tr>
 		<tr>
 			<th>@localizer["Small straight"]</th>
-			<td>@localizer["Score 30"]</td>
+			<td>@localizer["Score {0}", 30]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -131,7 +131,7 @@
 		</tr>
 		<tr>
 			<th>@localizer["Large straight"]</th>
-			<td>@localizer["Score 40"]</td>
+			<td>@localizer["Score {0}", 40]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -140,7 +140,7 @@
 		</tr>
 		<tr>
 			<th>@localizer["Yatzy"]</th>
-			<td>@localizer["Score 50"]</td>
+			<td>@localizer["Score {0}", 50]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
