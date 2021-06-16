@@ -22,18 +22,18 @@ namespace Yatzysheet
 
 	public class GameColumn
 	{
-		public int? Ones { get; set; }
+		public int? Aces { get; set; }
 		public int? Twos { get; set; }
 		public int? Threes { get; set; }
 		public int? Fours { get; set; }
 		public int? Fives { get; set; }
 		public int? Sixes { get; set; }
 
-		public int? Triple { get; set; }
-		public int? Quadruple { get; set; }
+		public int? ThreeOfAKind { get; set; }
+		public int? FourOfAKind { get; set; }
 		public int? FullHouse { get; set; }
-		public int? SmallStreet { get; set; }
-		public int? BigStreet { get; set; }
+		public int? SmallStraight { get; set; }
+		public int? LargeStraight { get; set; }
 		public int? Yatzy { get; set; }
 		public int? Chance { get; set; }
 
@@ -52,7 +52,7 @@ namespace Yatzysheet
 			get
 			{
 				var sum = 0;
-				sum += Ones ?? 0;
+				sum += Aces ?? 0;
 				sum += Twos ?? 0;
 				sum += Threes ?? 0;
 				sum += Fours ?? 0;
@@ -72,11 +72,11 @@ namespace Yatzysheet
 			get
 			{
 				var sum = 0;
-				sum += Triple ?? 0;
-				sum += Quadruple ?? 0;
+				sum += ThreeOfAKind ?? 0;
+				sum += FourOfAKind ?? 0;
 				sum += FullHouse ?? 0;
-				sum += SmallStreet ?? 0;
-				sum += BigStreet ?? 0;
+				sum += SmallStraight ?? 0;
+				sum += LargeStraight ?? 0;
 				sum += Yatzy ?? 0;
 				sum += Chance ?? 0;
 				return sum;

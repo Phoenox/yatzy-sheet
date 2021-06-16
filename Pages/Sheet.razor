@@ -17,7 +17,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].Ones" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].Ones)" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].Aces" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].Aces)" /></td>
 			}
 		</tr>
 		<tr>
@@ -98,7 +98,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].Triple" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].Triple)" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].ThreeOfAKind" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].ThreeOfAKind)" /></td>
 			}
 		</tr>
 		<tr>
@@ -107,7 +107,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].Quadruple" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].Quadruple)" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].FourOfAKind" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].FourOfAKind)" /></td>
 			}
 		</tr>
 		<tr>
@@ -125,7 +125,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].SmallStreet" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].SmallStreet)" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].SmallStraight" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].SmallStraight)" /></td>
 			}
 		</tr>
 		<tr>
@@ -134,7 +134,7 @@
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
-				<td><input type="number" @bind="Game.Columns[localIndex].BigStreet" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].BigStreet)" /></td>
+				<td><input type="number" @bind="Game.Columns[localIndex].LargeStraight" onclick="this.select()" class="@GetCssClass(Game.Columns[localIndex].LargeStraight)" /></td>
 			}
 		</tr>
 		<tr>
