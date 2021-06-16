@@ -89,8 +89,16 @@
       "url": "_framework\/Microsoft.Extensions.DependencyInjection.dll"
     },
     {
-      "hash": "sha256-8L6pzpycBrKxgs\/3WsBVoR\/7NenUcL+e0i19DvlMog8=",
+      "hash": "sha256-1NfOL95lq4dl0FHKih3TpfkLME9hr3u\/bmihtto8NJk=",
       "url": "_framework\/Microsoft.Extensions.DependencyInjection.Abstractions.dll"
+    },
+    {
+      "hash": "sha256-HUyfdyt8hN7AVT6aTNEP9+aw4geZK01nw0cDRuCuws4=",
+      "url": "_framework\/Microsoft.Extensions.Localization.dll"
+    },
+    {
+      "hash": "sha256-oh0uovigKpcWHkaKIS3OreiGrTDXl3rccGt77xX77ys=",
+      "url": "_framework\/Microsoft.Extensions.Localization.Abstractions.dll"
     },
     {
       "hash": "sha256-TpIA498zSsaZAjS+42XzHSmeWdSuY4\/\/ydfZQGlz1O8=",
@@ -101,7 +109,7 @@
       "url": "_framework\/Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
-      "hash": "sha256-g1C9Fnh++M4k1mLduCz2yUnf\/70tTCbdZ\/s6bDjsmZM=",
+      "hash": "sha256-0ceIi\/iLdiKoxaztvCC\/4thA\/DazgsgrTETQXY30M3c=",
       "url": "_framework\/Microsoft.Extensions.Options.dll"
     },
     {
@@ -121,7 +129,7 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-KBHHhlD1TI+CMWvpWcnDtPFPERMpzWpBUkRcaKMDMjM=",
+      "hash": "sha256-ZPSQ7rsRmiwxm6ti5jq5yyDOC6cS8+TAPJJ+m8RNBfM=",
       "url": "_framework\/Yatzysheet.dll"
     },
     {
@@ -205,11 +213,15 @@
       "url": "_framework\/System.Text.Json.dll"
     },
     {
-      "hash": "sha256-EGzIkZ6FP7vbg6LHvrl7SHmFNKsdCdDvYpkLPaeeX3k=",
+      "hash": "sha256-XMVBhe19R3vs7JTTtbAgA\/dSIIIeTasWeAeNUYoaVys=",
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-il3Tj+oli8R00\/lO7Wt9en0hNxe1hujMwO2\/SLG5q2g=",
+      "hash": "sha256-sLDLyXGemcHWATV0sZ9Qjg8vmOZ+DyoeSJ+3NA7RzTM=",
+      "url": "_framework\/de\/Yatzysheet.resources.dll"
+    },
+    {
+      "hash": "sha256-+EnEWh+b\/X1s9P\/m5jS443Z2NsAVpafz4TxFOGmi\/Pk=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -217,5 +229,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "NGU56cjN"
+  "version": "qtnAllW3"
 };
