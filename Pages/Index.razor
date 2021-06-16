@@ -1,13 +1,14 @@
 ﻿@page "/"
+@inject IStringLocalizer<Index> localizer
 
-<h1>Der digitale Kniffelblock</h1>
+<h1>@localizer["Your digital Yatzy sheet"]</h1>
 
 <form>
 	<div class="form-group">
-		<label for="numberInput">Mit wie vielen Spalten wollt ihr spielen?</label>
-		<input type="number" class="form-control" id="numberInput" @bind="numberOfColumns"/>
+		<label for="numberInput">@localizer["With how many columns to you wish to play?"]</label>
+		<input type="number" class="form-control" id="numberInput" @bind="numberOfColumns" />
 	</div>
-	<a class="btn btn-primary" href="sheet/@numberOfColumns" type="submit">Und los!</a>
+	<a class="btn btn-primary" href="sheet/@numberOfColumns" type="submit">@localizer["Let's go!"]</a>
 </form>
 
 @code {

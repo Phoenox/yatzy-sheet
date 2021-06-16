@@ -1,4 +1,5 @@
 ﻿@page "/sheet/{numberOfColumns:int}"
+@inject IStringLocalizer<Index> localizer
 
 <table>
 	<thead>
@@ -6,14 +7,14 @@
 			<th colspan="2" />
 			@for (int i = 1; i <= numberOfColumns; i++)
 			{
-				<th>Spiel @i</th>
+				<th>@localizer[$"Game {i}"]</th>
 			}
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
 			<th>&#9856;&#9856;&#9856;</th>
-			<td>Nur Einser zählen</td>
+			<td>@localizer["Only Aces count"]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -22,7 +23,7 @@
 		</tr>
 		<tr>
 			<th>&#9857;&#9857;&#9857;</th>
-			<td>Nur Zweier zählen</td>
+			<td>@localizer["Only Twos count"]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -31,7 +32,7 @@
 		</tr>
 		<tr>
 			<th>&#9858;&#9858;&#9858;</th>
-			<td>Nur Dreier zählen</td>
+			<td>@localizer["Only Threes count"]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -40,7 +41,7 @@
 		</tr>
 		<tr>
 			<th>&#9859;&#9859;&#9859;</th>
-			<td>Nur Vierer zählen</td>
+			<td>@localizer["Only Fours count"]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -49,7 +50,7 @@
 		</tr>
 		<tr>
 			<th>&#9860;&#9860;&#9860;</th>
-			<td>Nur Fünfer zählen</td>
+			<td>@localizer["Only Fives count"]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -58,7 +59,7 @@
 		</tr>
 		<tr>
 			<th>&#9861;&#9861;&#9861;</th>
-			<td>Nur Sechser zählen</td>
+			<td>@localizer["Only Sixes count"]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -66,7 +67,7 @@
 			}
 		</tr>
 		<tr>
-			<th>Summe</th>
+			<th>@localizer["Sum"]</th>
 			<td></td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
@@ -75,8 +76,8 @@
 			}
 		</tr>
 		<tr>
-			<th>Bonus bei 63+</th>
-			<td>Plus 35</td>
+			<th>@localizer["Bonus with 63+"]</th>
+			<td>@localizer["Plus 35"]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -84,7 +85,7 @@
 			}
 		</tr>
 		<tr>
-			<th>Gesamt Oben</th>
+			<th>@localizer["Total Top"]</th>
 			<td></td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
@@ -93,8 +94,8 @@
 			}
 		</tr>
 		<tr>
-			<th>Dreierpasch</th>
-			<td>Alle Augen zählen</td>
+			<th>@localizer["3 of a kind"]</th>
+			<td>@localizer["All dice count"]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -102,8 +103,8 @@
 			}
 		</tr>
 		<tr>
-			<th>Viererpasch</th>
-			<td>Alle Augen zählen</td>
+			<th>@localizer["4 of a kind"]</th>
+			<td>@localizer["All dice count"]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -111,8 +112,8 @@
 			}
 		</tr>
 		<tr>
-			<th>Full House</th>
-			<td>25 Punkte</td>
+			<th>@localizer["Full House"]</th>
+			<td>@localizer["Score 25"]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -120,8 +121,8 @@
 			}
 		</tr>
 		<tr>
-			<th>Kleine Straße</th>
-			<td>30 Punkte</td>
+			<th>@localizer["Small straight"]</th>
+			<td>@localizer["Score 30"]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -129,8 +130,8 @@
 			}
 		</tr>
 		<tr>
-			<th>Große Straße</th>
-			<td>40 Punkte</td>
+			<th>@localizer["Large straight"]</th>
+			<td>@localizer["Score 40"]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -138,8 +139,8 @@
 			}
 		</tr>
 		<tr>
-			<th>Kniffel</th>
-			<td>50 Punkte</td>
+			<th>@localizer["Yatzy"]</th>
+			<td>@localizer["Score 50"]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -147,8 +148,8 @@
 			}
 		</tr>
 		<tr>
-			<th>Chance</th>
-			<td>Alle Augen zählen</td>
+			<th>@localizer["Chance"]</th>
+			<td>@localizer["All dice count"]</td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
 				var localIndex = i;
@@ -156,7 +157,7 @@
 			}
 		</tr>
 		<tr>
-			<th>Gesamt Unten</th>
+			<th>@localizer["Total Bottom"]</th>
 			<td></td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
@@ -165,7 +166,7 @@
 			}
 		</tr>
 		<tr>
-			<th>Spielsumme</th>
+			<th>@localizer["Total Column"]</th>
 			<td></td>
 			@for (int i = 0; i < numberOfColumns; i++)
 			{
@@ -174,7 +175,7 @@
 			}
 		</tr>
 		<tr>
-			<th>Total</th>
+			<th>@localizer["Grand Total"]</th>
 			<td></td>
 			<td colspan="@numberOfColumns"><input type="number" readonly style="width: 100%;" @bind="Game.Total" /></td>
 		</tr>
