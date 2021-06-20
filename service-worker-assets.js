@@ -17,7 +17,7 @@
       "url": "favicon.ico"
     },
     {
-      "hash": "sha256-wPunvjQmCdUHTLf2VLRA5Sht\/OuKFYeJdocIIkpwrcM=",
+      "hash": "sha256-0S2z9RdFzPhBpxAI6Zfo94fyZLZ8ZDgDMQ46jgINwO0=",
       "url": "icon.png"
     },
     {
@@ -25,7 +25,7 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-3EkZVmO8FEPWspStDgSWz1rrvg3IGcvlanMpgxb5\/Ag=",
+      "hash": "sha256-4VU3e6jw1RxqbQFG32DrJ054J2dyNoLRcfXCf4WfkJ0=",
       "url": "manifest.json"
     },
     {
@@ -229,5 +229,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "qtnAllW3"
+  "version": "UN13AKPA"
 };
