@@ -1,8 +1,8 @@
 {
 	"name": "Yatzysheet",
 	"short_name": "Yatzysheet",
-	"start_url": "/",
-	"scope":  "/",
+	"start_url": "/yatzy-sheet/",
+	"scope":  "/yatzy-sheet/",
 	"display": "standalone",
 	"background_color": "#ffffff",
 	"theme_color": "#03173d",
