@@ -21,7 +21,7 @@
       "url": "icon.png"
     },
     {
-      "hash": "sha256-n73OhmZltf1pOvy9hTBJZBSKeQGujhrS2RpswFGNtIw=",
+      "hash": "sha256-h59XnCMl71BcZgx77mSGyb34vEwNjNFR5mwGWNo4sDg=",
       "url": "index.html"
     },
     {
